@@ -1,0 +1,146 @@
+body {
+  background: url(images/bg-pattern-top-desktop.svg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body h1 {
+  color: #502050;
+  font-size: 3.5em;
+  font-weight: bold;
+  line-height: .8em;
+}
+
+body h2 {
+  font-size: 1.3em;
+  color: #8c828a;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+body .ratedContainer {
+  width: 90%;
+  margin: auto;
+}
+
+body .ratedContainer .rated {
+  margin: .8em;
+  padding: .7em;
+  background-color: #f7f2f8;
+  border-radius: .5em;
+  transition: transform .2s;
+}
+
+body .ratedContainer .rated p {
+  margin: .3em;
+  color: #502050;
+  font-weight: 1000;
+}
+
+body .ratedContainer .rated:hover {
+  transform: scale(1.05);
+}
+
+body .opinionContainer {
+  color: #f7f2f8;
+}
+
+body .opinionContainer .opinionBox {
+  background: #502050;
+  margin: 2em;
+  padding: 1em 2em;
+  border-radius: .5em;
+  transition: transform .2s;
+}
+
+body .opinionContainer .opinionBox:hover {
+  transform: scale(1.05);
+}
+
+body .opinionContainer img {
+  width: 3em;
+  height: 3em;
+  border-radius: 5em;
+}
+
+body .opinionContainer .opinionHead {
+  display: flex;
+}
+
+body .opinionContainer .opinionHeadText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+body .opinionContainer .opinionHeadText .name {
+  font-weight: bold;
+}
+
+body .opinionContainer .opinionHeadText .profession {
+  font-weight: lighter;
+  color: #d41cac;
+  font-size: .9em;
+}
+
+body .opinionContainer p {
+  line-height: 1.5em;
+}
+
+footer {
+  background-color: grey;
+  width: 100%;
+  color: white;
+  padding: .2em 0;
+}
+
+footer a {
+  color: white;
+}
+
+@media (min-width: 900px) {
+  .topSide {
+    margin: 2em 5em 0 5em;
+    display: flex;
+    flex-direction: row;
+  }
+  .topSide h1,
+  .topSide h2 {
+    text-align: left;
+    width: 70%;
+  }
+  .topSide .ratedContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topSide .ratedContainer .rated {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+    padding: 3%;
+  }
+  .topSide .ratedContainer .rated2 {
+    margin-left: 10%;
+  }
+  .topSide .ratedContainer .rated3 {
+    margin-left: 20%;
+  }
+  .opinionContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .opinionContainer .opinionBox2 {
+    transform: translateY(5%);
+  }
+  .opinionContainer .opinionBox3 {
+    transform: translateY(10%);
+  }
+}
